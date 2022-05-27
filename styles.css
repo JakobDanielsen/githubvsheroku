@@ -1,3 +1,8 @@
 section {
     margin: 8% 15% 8% 15%;
 }
+
+.videopreview {
+    background-color: #F5F6FB;
+    border-radius: 15px;
+}

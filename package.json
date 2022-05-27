@@ -1,0 +1,22 @@
+{
+  "name": "githubvsheroku",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JakobDanielsen/githubvsheroku.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JakobDanielsen/githubvsheroku/issues"
+  },
+  "homepage": "https://github.com/JakobDanielsen/githubvsheroku#readme",
+  "description": "",
+  "dependencies": {
+    "video.js": "^7.19.2"
+  }
+}
