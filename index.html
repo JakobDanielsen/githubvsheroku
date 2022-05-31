@@ -14,9 +14,9 @@
 <body>
     <section id="hero" class="">
         <div class="px-4 pt-5 mt-5 text-center">
-            <img class="mx-5 mx-auto mb-4" src="img/glogo.png" width="70" alt="githublogo">
+            <img class="mx-5 mx-auto mb-4" src="img/glogo.png" width="80" alt="githublogo">
             <h1 class="mx-5 display-5 d-inline"> x</h1>
-            <img class="mx-5 mx-auto mb-4" src="img/hlogo.png" width="70" alt="herokulogo">
+            <img class="mx-5 mx-auto mb-4" src="img/hlogo.png" width="80" alt="herokulogo">
             <h1 class="display-1">Github vs Heroku</h1>
             <div>
                 <a class="btn btn-primary mt-5 mx-3" href="#howtogithub">How to GitHub</a>
@@ -46,60 +46,76 @@
 
     </section>
 
-    <section id="howtogithub">
+    <section id="howtogithub" class="mb-5">
 
+        <hr>
         <h1 class="display-1 ">How to host on Github</h1>
         <h1 class="display-6 mb-5">For your static website</h1>
 
         <ol>
             <li class="lead">First of all head over to you project page and go to settings. We're going to change the project visibility.</li>
-            <img src="img/pic1.png" class="d-block m-5 mx-auto rounded" width="30%" alt="settings tab">
+            <img src="img/pic1.png" class="d-block m-5 mx-auto rounded" width="70%" alt="settings tab">
             <li class="lead">Then you scroll down to the project visibility. You can skip this step if you know your project is already public. The project needs to pe public in order to be hosted on Github.</li>
-            <img src="img/pic2.png" class="d-block m-5 mx-auto rounded" width="40%" alt="change repository visibility">
+            <img src="img/pic2.png" class="d-block m-5 mx-auto rounded" width="70%" alt="change repository visibility">
             <li class="lead">Make it public by checking off here.</li>
-            <img src="img/pic3.png" class="d-block m-5 mx-auto rounded" width="40%" alt="make public">
+            <img src="img/pic3.png" class="d-block m-5 mx-auto rounded" width="70%" alt="make public">
             <li class="lead">Then go to the pages section.</li>
-            <img src="img/pic4.png" class="d-block m-5 mx-auto rounded" width="40%" alt="pages section">
+            <img src="img/pic4.png" class="d-block m-5 mx-auto rounded" width="70%" alt="pages section">
             <li class="lead">The last step is to click on select branch and switching from None to main, or the name of the branch you want to upload.</li>
-            <img src="img/pic5.png" class="d-block m-5 mx-auto rounded" width="40%" alt="select main branch">
+            <img src="img/pic5.png" class="d-block m-5 mx-auto rounded" width="70%" alt="select main branch">
             <p class="lead">Now your site will be up in a minute or two and will also be updated every time you push changes into the uploaded branch.</p>
-            <img src="img/pic6.png" class="d-block m-5 mx-auto rounded" width="60%" alt="heres your link">
+            <img src="img/pic6.png" class="d-block m-5 mx-auto rounded" width="70%" alt="heres your link">
             <a class="btn btn-outline-primary" href="#howtoheroku">How to Heroku</a>
         </ol>
+        
+    </section>
 
-    </section class="mb-5" >
-
-    <section class="mt-5"id="howtoheroku">
+    <section id="howtoheroku" class="mb-5">
+        <hr>
 
         <h1 class="display-1 ">How to host on Heroku</h1>
         <h1 class="display-6 mb-5">For your dynamic website</h1>
 
         <ol>
             <li class="lead">First of all you'll need to download heroku, on mac this is done by using homebrew in the terminal as shown below. On Windows, click the installer button. For Ubuntu users, write the command shown below.</li>
-            <img src="img/hpic1.png" class="d-block m-5 mx-auto rounded" width="60%" alt="downloader interface">
+            <img src="img/hpic1.png" class="d-block m-5 mx-auto rounded" width="70%" alt="downloader interface">
             <li class="lead">Then you'll need to write: heroku login. This will open your browser and log in automatically. If everything went well you should see this in your terminal.</li>
-            <img src="img/hpic2.png" class="d-block m-5 mx-auto rounded" width="60%" alt="CLI response to heroku login">
+            <img src="img/hpic2.png" class="d-block m-5 mx-auto rounded" width="70%" alt="CLI response to heroku login">
             <li class="lead">Work your way in to your repository and create a file named "Procfile", the file naming is very strict.</li>
-            <img src="img/hpic3.png" class="d-block m-5 mx-auto rounded" width="60%" alt="Create Procfile in repository">
+            <img src="img/hpic3.png" class="d-block m-5 mx-auto rounded" width="70%" alt="Create Procfile in repository">
             <li class="lead">Open Procfile in a text editor program and write exactly this inside the file.</li>
-            <img src="img/hpic4.png" class="d-block m-5 mx-auto rounded" width="40%" alt="Procfile instructions">
+            <img src="img/hpic4.png" class="d-block m-5 mx-auto rounded" width="70%" alt="Procfile instructions">
             <li class="lead">Head over to your terminal again and write "heroku create". You will then be given a randomly generated hosting name and a link.</li>
-            <img src="img/hpic5.png" class="d-block m-5 mx-auto rounded" width="60%" alt="response to heroku create">
+            <img src="img/hpic5.png" class="d-block m-5 mx-auto rounded" width="70%" alt="response to heroku create">
             <li class="lead">To push your branch to your new site write: "git push heroku  [ branch name ] ". If it doesnt work it is most likely that you have some errors with your heroku configuration or procfile.</li>
-            <img src="img/hpic6.png" class="d-block m-5 mx-auto rounded" width="60%" alt="response to git push heroku main">
+            <img src="img/hpic6.png" class="d-block m-5 mx-auto rounded" width="70%" alt="response to git push heroku main">
             <p class="lead">That's it! Your heroku site will automatically update every time you push to github, just like github pages.</p>
-            <img src="img/hpic7.png" class="d-block m-5 mx-auto rounded" width="60%" alt="done!">
+            <img src="img/hpic7.png" class="d-block m-5 mx-auto rounded" width="70%" alt="done!">
             <a class="btn btn-outline-primary" href="#howtogithub">How to GitHub</a>
         </ol>
-
 
     </section>
 
     <section id="conclusion">
-        
-        <h1 class="display-3">Conclusion</h1>
+        <hr>
+        <h1 class="display-1">Conclusion</h1>
 
-        <p class="fs-4">Heroku and Github are both very powerful tools that can be used for online hosting, however you should chose your alternative based on what you want to upload.
+        <div class="row m-5">
+            <ul class="col-lg-6">
+                <h1 class="mb-5">GitHub is for those who want</h1>
+                <li class="lead m-3">Quicker hosting</li>
+                <li class="lead m-3">Easier hosting</li>
+                <li class="lead m-3">Unlimited static hosting</li>
+            </ul>
+            <ul class="col-lg-6">
+                <h1 class="mb-5">Heroku is for those who want</h1>
+                <li class="lead m-3">More copmlex hosting</li>
+                <li class="lead m-3">More proffesional hosting</li>
+                <li class="lead m-3">Limitied dynamic hosting</li>
+            </ul>
+        </div>
+
+        <p class="fs-3 lead">Heroku and Github are both very powerful tools that can be used for online hosting, however you should chose your alternative based on what you want to upload.
             If you just want a little project uploaded as a folder without using express.js Github is the best choice. If you want a more server-like website that uses requests, responses and hidden files you should pick Heroku.
         </p>
 
